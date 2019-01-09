@@ -15,16 +15,7 @@ p = zeros(m, 1);
 %               You should set p to a vector of 0's and 1's
 %
 h = sigmoid(X * theta);
-%lambda = 0.0001;
-%theta_sqr = theta'*theta;
-%theta(1) = 0;
-%J = (sum((-y'*log(h))-((1-y')*log(1-h)))/m)+((lambda/(2*m))*sum(theta_sqr));
-
 p = (h>= 0.5);
-
-
-
-
 
 % =========================================================================
 
